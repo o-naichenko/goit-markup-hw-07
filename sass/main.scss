@@ -1,1 +1,10 @@
-@
+@import "./utils/variables";
+@import "./utils/utils";
+@import "./components/header";
+@import "./components/index_hero";
+
+body {
+  /* width: 1600px; */
+  margin: 0;
+  font-family: roboto, sans-serif;
+}

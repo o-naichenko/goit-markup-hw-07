@@ -1,0 +1,106 @@
+.header {
+  &--portfolio {
+    border-bottom: 1px solid #ececec;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+.logo {
+  display: block;
+  color: $blue-color;
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: inline-block;
+  text-decoration: none;
+
+  &__studio {
+    color: #000000;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav__list {
+  margin: 0 0 0 80px;
+  display: flex;
+  list-style-type: none;
+}
+.header-nav__item {
+  position: relative;
+}
+.header-nav__item:not(:last-child) {
+  margin-right: 45px;
+}
+.header-nav__link {
+  display: block;
+  padding: 32px 0;
+
+  color: var(--dark-gray-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color $trans-time;
+
+  &:hover,
+  &:focus,
+  &--current {
+    color: $blue-color;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $blue-color;
+    border-radius: 2px;
+    opacity: 0;
+    transition: $trans-time;
+  }
+}
+.header-nav__link--current::before {
+  opacity: 1;
+}
+.header-address {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.header-address__link:not(:last-child) {
+  margin-right: 30px;
+}
+.header-address__link {
+  display: inline-flex;
+  align-items: center;
+  color: $gray-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color $trans-time;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+}
+.header-address__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill $trans-time;
+}
