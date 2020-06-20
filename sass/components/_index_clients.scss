@@ -1,0 +1,27 @@
+.clients__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: $icon-color;
+  transition: $trans-time;
+
+  &:hover,
+  &link {
+    border-color: $blue-color;
+    color: $blue-color;
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}
