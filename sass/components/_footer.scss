@@ -11,16 +11,13 @@
 // footer-styles
 
 .footer {
-  padding-bottom: 20px;
   background-color: #2f303a;
   color: $white-color;
+  padding: 60px 0;
 }
 .footer__container {
   display: flex;
-  padding-top: 46px;
-  padding-bottom: 28px;
   margin: 0 auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   justify-content: space-between;
   align-items: baseline;
 }
@@ -30,16 +27,10 @@
   width: 231px;
 }
 .logo {
-  font-family: raleway;
-  color: $blue-color;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.logo__studio {
-  color: $white-color;
+  @extend %logo;
+  &__studio-white {
+    color: $white-color;
+  }
 }
 .address {
   display: flex;
@@ -113,7 +104,6 @@
 }
 
 .subscribe__input {
-  /* display: inline-block; */
   width: 358px;
   padding: 9px 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -150,25 +140,7 @@
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-// .subscribe__title {
-//   display: block;
-//   margin: 0;
-//   font-weight: 900;
-//   font-size: 16px;
-//   line-height: 1.87;
-//   letter-spacing: 0.06em;
-// }
 .subscribe__icon {
   display: block;
   margin-left: 10px;
-}
-.footer__copyright {
-  display: block;
-  text-align: center;
-  margin: 20px 0 0 0;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
 }

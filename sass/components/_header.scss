@@ -8,14 +8,7 @@
   }
 }
 .logo {
-  display: block;
-  color: $blue-color;
-  font-family: raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  display: inline-block;
-  text-decoration: none;
+  @extend %logo;
 
   &__studio {
     color: #000000;
