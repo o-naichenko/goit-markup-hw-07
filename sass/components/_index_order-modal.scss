@@ -8,7 +8,7 @@
 
   opacity: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity $trans-time;
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -33,7 +33,7 @@
   display: inline-flex;
   position: absolute;
   top: 8px;
-  right: -8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -57,7 +57,7 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.order-form__title {
+.order-form__header {
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 20px;
