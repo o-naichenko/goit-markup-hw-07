@@ -21,7 +21,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 528px;
+  min-width: 528px;
   padding: 40px;
   margin-bottom: 30px;
 
@@ -41,10 +41,16 @@
   align-items: center;
   justify-content: center;
   background-color: $white-color;
-  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  // box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //   0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  &:hover,
+  &:focus {
+    fill: $blue-color;
+    cursor: pointer;
+  }
 }
 .order-form {
   display: flex;
@@ -52,14 +58,14 @@
   align-items: center;
 }
 .order-form__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   margin-bottom: 30px;
 }
 .order-form__header {
+  display: block;
   margin-bottom: 30px;
-  font-weight: bold;
+  text-align: center;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -68,9 +74,12 @@
 }
 .order-form__form-field {
   position: relative;
-
-  &:not(:last-child) {
+  display: block;
+  &:not(:nth-last-of-type(2)) {
     margin-bottom: 28px;
+  }
+  &:nth-last-of-type(2) {
+    margin-bottom: 20px;
   }
 }
 .order-form__input {
@@ -119,7 +128,7 @@
   transition: $trans-time;
 }
 .order-form__comment {
-  display: inline-block;
+  display: block;
   min-width: 448px;
   padding: 12px 16px 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -147,6 +156,7 @@
 .order-form__conditions {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .order-form__checkbox {
   @extend %visually-hidden;
@@ -166,16 +176,16 @@
   background-origin: border-box;
 }
 .order-form__conditions-title {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: $gray-color;
 }
 .order-form__conditions-link {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: $blue-color;
 }
