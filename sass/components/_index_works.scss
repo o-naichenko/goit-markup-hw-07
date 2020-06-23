@@ -1,3 +1,12 @@
+.works {
+  @extend %section-padding;
+}
+.works__container {
+  @extend %container;
+}
+.works__header {
+  @extend %section-header;
+}
 .works__list {
   margin: 0;
   padding: 0;

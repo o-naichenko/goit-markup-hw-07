@@ -1,3 +1,9 @@
+.advantages {
+  @extend %section-padding;
+}
+.advantages__container {
+  @extend %container;
+}
 .advantages__header {
   @extend %visually-hidden;
 }

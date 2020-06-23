@@ -1,5 +1,12 @@
 .team {
+  @extend %section-padding;
   background-color: #f5f4fa;
+}
+.team__container {
+  @extend %container;
+}
+.team__header {
+  @extend %section-header;
 }
 .team__list {
   margin: 0;
@@ -13,14 +20,12 @@
   padding-bottom: 24px;
   text-align: center;
   background-color: $white-color;
-  list-style-type: none;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 .team__name {
   margin: 30px 0 0 0;
-  /* padding: 30px 0 0 0; */
   color: $dark-gray-color;
   font-weight: 500;
   font-size: 16px;

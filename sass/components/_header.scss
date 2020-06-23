@@ -2,10 +2,11 @@
   &--portfolio {
     border-bottom: 1px solid #ececec;
   }
-  &__container {
-    display: flex;
-    align-items: center;
-  }
+}
+.header__container {
+  @extend %container;
+  display: flex;
+  align-items: center;
 }
 .logo {
   @extend %logo;

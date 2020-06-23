@@ -105,17 +105,10 @@
   transform: translateX(-20px) translateY(-45px);
 }
 .order-form__title {
-  display: block;
-  position: absolute;
+  @extend %form-title;
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: $gray-color;
-  transition: $trans-time;
 }
 .order-form__icon {
   display: block;
@@ -141,17 +134,9 @@
   color: $blue-color;
 }
 .order-form__comment-title {
-  display: block;
-  position: absolute;
+  @extend %form-title;
   top: 12px;
   left: 16px;
-  /* transform: translateY(-50%); */
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: $gray-color;
-  transition: $trans-time;
 }
 .order-form__conditions {
   display: flex;
@@ -189,16 +174,8 @@
   letter-spacing: 0.03em;
   color: $blue-color;
 }
-.order-form__submit {
-  padding: 10px 55px;
+.order-form__submit-btn {
+  @extend %button;
 
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  color: $white-color;
-  background-color: $blue-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 10px 55px;
 }

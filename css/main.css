@@ -3,7 +3,48 @@ img {
   display: block;
 }
 
-.section-header {
+.connect__title,
+.subscribe__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.hero__btn, .subscribe__btn, .order-form__submit-btn {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.header__container, .advantages__container, .works__container, .team__container, .clients__container, .footer__container, .gallery__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.order-form__title, .order-form__comment-title {
+  display: block;
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.works__header, .team__header, .clients__header {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
@@ -13,44 +54,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section {
+.advantages, .works, .team, .clients, .gallery {
   padding: 94px 0;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container > .list {
-  margin: 0 0 0 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style-type: none;
-}
-
-.advantages__header, .order-form__checkbox {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.logo {
-  font-family: raleway;
-  color: #2196f3;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  text-decoration: none;
 }
 
 .social-list__icon, .connect__icon {
@@ -65,6 +70,24 @@ img {
   padding: 12px 12px;
   border: 0;
   border-radius: 50%;
+}
+
+.logo {
+  font-family: raleway;
+  color: #2196f3;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.advantages__header, .order-form__checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .header--portfolio {
@@ -209,23 +232,7 @@ img {
   display: inline-block;
   margin-top: 46px;
   padding: 10px 32px;
-  background-color: #2196f3;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border: 0;
-  border-radius: 4px;
   text-align: center;
-  cursor: pointer;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__btn:hover, .hero__btn:focus {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .advantages__list {
@@ -331,7 +338,6 @@ img {
   padding-bottom: 24px;
   text-align: center;
   background-color: #ffffff;
-  list-style-type: none;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -339,7 +345,6 @@ img {
 
 .team__name {
   margin: 30px 0 0 0;
-  /* padding: 30px 0 0 0; */
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -386,8 +391,6 @@ img {
 }
 
 .clients__list {
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,6 +398,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .clients__link {
@@ -423,14 +428,6 @@ img {
 
 .clients__icon {
   fill: currentColor;
-}
-
-.block-title {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .footer {
@@ -570,18 +567,6 @@ img {
   padding: 10px 28px;
   width: 200px;
   height: 50px;
-  /* padding: 10px 28px; */
-  border: 0;
-  border-radius: 4px;
-  background-color: #2196f3;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe__icon {
@@ -724,19 +709,10 @@ img {
 }
 
 .order-form__title {
-  display: block;
-  position: absolute;
   top: 50%;
   left: 42px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form__icon {
@@ -769,18 +745,8 @@ img {
 }
 
 .order-form__comment-title {
-  display: block;
-  position: absolute;
   top: 12px;
   left: 16px;
-  /* transform: translateY(-50%); */
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form__conditions {
@@ -827,18 +793,8 @@ img {
   color: #2196f3;
 }
 
-.order-form__submit {
+.order-form__submit-btn {
   padding: 10px 55px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  color: #ffffff;
-  background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .filter {
