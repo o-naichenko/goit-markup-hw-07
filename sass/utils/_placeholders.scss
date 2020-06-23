@@ -14,3 +14,15 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+%social-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+%social-link {
+  display: block;
+  padding: 12px 12px;
+  border: 0;
+  border-radius: 50%;
+}

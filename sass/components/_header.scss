@@ -47,30 +47,23 @@
   &--current {
     color: $blue-color;
   }
-  &::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: $blue-color;
-    border-radius: 2px;
-    opacity: 0;
-    transition: $trans-time;
-  }
 }
 .header-nav__link--current::before {
-  opacity: 1;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: $blue-color;
+  border-radius: 2px;
+  transition: $trans-time;
 }
 .header-address {
   margin-left: auto;
   display: flex;
   align-items: center;
-}
-.header-address__link:not(:last-child) {
-  margin-right: 30px;
 }
 .header-address__link {
   display: inline-flex;

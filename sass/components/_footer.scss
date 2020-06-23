@@ -74,9 +74,7 @@
   margin-right: 10px;
 }
 .connect__link {
-  display: block;
-  padding: 12px 12px;
-  border-radius: 50%;
+  @extend %social-link;
   background-color: rgba(255, 255, 255, 0.1);
   color: $white-color;
   transition: $trans-time;
@@ -87,10 +85,7 @@
   }
 }
 .connect__icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+  @extend %social-icon;
 }
 
 /* подписаться на рассылку */
